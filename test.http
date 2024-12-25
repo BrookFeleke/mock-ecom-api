@@ -1,0 +1,39 @@
+### 1. Get all users (cached)
+GET http://localhost:3000/users
+
+### 2. Add a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+Authorization: Bearer mock-token
+
+{
+  "name": "Albert Hammond Jr",
+  "email": "albert@thestrokes.com"
+}
+
+### 3. Update a user
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+Authorization: Bearer mock-token
+
+{
+  "email": "new_email@thestrokes.com"
+}
+
+### 4. Delete a user
+DELETE http://localhost:3000/users/1
+Authorization: Bearer mock-token
+
+### 5. Get all products (cached)
+GET http://localhost:3000/products
+
+### 6. Add a new product
+POST http://localhost:3000/products
+Content-Type: application/json
+Authorization: Bearer mock-token
+
+{
+  "name": "Acoustic Guitar",
+  "price": 900,
+  "stock": 5
+}
